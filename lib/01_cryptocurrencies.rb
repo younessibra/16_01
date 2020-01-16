@@ -14,8 +14,6 @@ end
 
 my_hash = Hash[$cryptos.zip($values)]
 
-puts (my_hash)
-
 def biggest_crypto(hash)
   sorted_hash = hash.sort_by{ |key, value| value}
   return sorted_hash.last[0] 
